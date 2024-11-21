@@ -1,0 +1,46 @@
+{
+  "name": "@joaquin-vazquez-garcia/slider-responsive-react",
+  "private": false,
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "bundle": "tsup src/index.js"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-intersection-observer": "^9.13.1",
+    "react-swipeable": "^7.0.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.11.0",
+    "tsup": "^8.3.5",
+    "vite": "^5.4.10"
+  },
+  "author": "Joaquin Vázquez García",
+  "license": "MIT",
+  "keywords": [
+    "slider",
+    "react",
+    "react slider",
+    "slider react",
+    "slider responsive",
+    "responsive slider",
+    "slider responsive react",
+    "responsive slider react",
+    "responsive react slider"
+  ]
+}

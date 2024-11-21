@@ -1,0 +1,67 @@
+.swipeModal {
+    display: none;
+}
+.swipeModal.active {
+    display: initial;
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    z-index: 100;
+    top: 0;
+    cursor: pointer;
+}
+.swipeModal.active .swipeModalImg {
+    animation-name: swipeFinger;
+    animation-duration: 1s;
+}
+
+.swipeModalText {
+    user-select: none;
+    z-index: 95;
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.swipeModalOverlay {
+    z-index: 90;
+    background-color: #000000c2;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    position: absolute;
+}
+
+.swipeText {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+.closeText {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+
+@keyframes swipeFinger {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    33% {
+        transform: translateX(20px) /* translateY(5px) */ rotate(10deg);
+    }
+    66% {
+        transform: translateX(-20px) /* translateY(5px) */ rotate(-10deg);
+    }
+    100% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .swipeModal {
+        display: none !important;
+    }
+}
